@@ -13,5 +13,5 @@
 
 //Let laracast layer respond to anything by loading the welcome view. Let JS handle various routing intricacies
 Route::get('/{any?}', function () {
-    return view('welcome');
+    return view('app');
 });

@@ -7,7 +7,6 @@ Vue.use(VueRouter);
 
 import routes from './routes';
 
-
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -33,7 +32,7 @@ var app = new Vue({
     	
     },
 	data: {
-		laracast_url: ' https://laracasts.com/series/laravel-vue-and-spas/episodes/1',
+		laracast_url: 'https://laracasts.com/series/laravel-vue-and-spas',
 	},
 	methods : {
 

@@ -1,8 +1,11 @@
 const mix = require('laravel-mix');
+require('laravel-mix-tailwind');
+
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .extract(['axios', 'bootstrap', 'jquery', 'lodash', 'popper.js', 'vue', 'bulma', 'vue-router'])
+    .sass('resources/sass/app.scss', 'public/css')
+    .extract(['axios', 'bootstrap', 'jquery', 'lodash', 'popper.js', 'vue', 'bulma', 'vue-router'])
+    .tailwind()
    ;
 
  if (!mix.inProduction()) {
