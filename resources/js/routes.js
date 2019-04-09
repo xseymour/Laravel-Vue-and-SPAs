@@ -1,3 +1,4 @@
+import NotFound from './components/NotFound';
 import Logo from './components/Logo';
 import LogoSymbol from './components/LogoSymbol';
 import Colors from './components/Colors';
@@ -13,6 +14,13 @@ export default {
 	linkActiveClass: 'font-bold', //Class to apply to active link on the global scale. (as opposed to applying to each link in app.blade.php)
 
 	routes: [
+		//404
+		{
+			path: '*',
+			component: NotFound
+		},
+
+
 		//The Brand Section
 		{
 			path: '/',

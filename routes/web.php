@@ -12,6 +12,11 @@
 */
 
 //Let laracast layer respond to anything by loading the welcome view. Let JS handle various routing intricacies
-Route::get('/{any?}', function () {
+//Route::get('/{any?}', function () {
+//    return view('app');
+//});
+
+//Updated to this to truly match anything (using regular expression). Before a route such as '/lorem/ipsum' would default to laravels missing page, and not our routes missing page
+Route::get('/{any}', function () {
     return view('app');
-});
+})->where('any', '.*');
