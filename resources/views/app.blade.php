@@ -23,10 +23,10 @@
                         <section class="mb-8">
                             <h5 class="uppercase font-bold mb-3">The Brand</h5 >
                             <ul class="list-reset">
-                                <li class="text-sm leading-loose"><router-link class="text-black" to='/'>Logo</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to='/'>Logo Symbol</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to='/'>Colors</router-link></li>
-                                <li class="text-sm leading-loose"><router-link class="text-black" to='/'>Typography</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" active-class="font-bold" to='/' exact>Logo</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" :to="{name: 'logo-symbol'}">Logo Symbol</router-link></li> {{-- Via named route (defined in routes.js) --}}
+                                <li class="text-sm leading-loose"><router-link class="text-black" to='/colors'>Colors</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" to='/typography'>Typography</router-link></li>
 
                             </ul>
                         </section>
@@ -34,10 +34,10 @@
                         <section class="mb-8">
                             <h5 class="uppercase font-bold mb-3">Doodles</h5>
                             <ul class="list-reset">
-                                <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'about' }">Mascot</router-link></li> {{-- Via named route (defined in routes.js) --}}
-                                <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'about' }">Illustrations</router-link></li> {{-- Via named route (defined in routes.js) --}}
-                                <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'about' }">Loaders & Animations</router-link></li> {{-- Via named route (defined in routes.js) --}}
-                                <li class="text-sm leading-loose"><router-link class="text-black" :to="{ name: 'about' }">Wallpapers</router-link></li> {{-- Via named route (defined in routes.js) --}}
+                                <li class="text-sm leading-loose"><router-link class="text-black" to="/mascot">Mascot</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" to="/illustrations">Illustrations</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" to="/loaders-and-animations">Loaders & Animations</router-link></li>
+                                <li class="text-sm leading-loose"><router-link class="text-black" to="/wallpapers">Wallpapers</router-link></li>
                             </ul>
                         </section>
                     </aside>
