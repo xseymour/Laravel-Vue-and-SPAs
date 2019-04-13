@@ -20,8 +20,7 @@ export default {
 			component: NotFound
 		},
 
-
-		//The Brand Section
+		//The Brand Section ----------------------------------------------------
 		{
 			path: '/',
 			component: Logo
@@ -40,7 +39,7 @@ export default {
 			component: Typography
 		},
 
-		//The Doodles Section
+		//The Doodles Section --------------------------------------------------
 		{
 			path: '/Mascot',
 			component: Mascot
