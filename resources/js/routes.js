@@ -5,8 +5,16 @@ import Colors from './components/Colors';
 import Typography from './components/Typography';
 import Mascot from './components/Mascot';
 import Illustrations from "./components/Illustrations";
-import LoadersAndAnimations from "./components/LoadersAndAnimations";
 import Wallpapers from "./components/Wallpapers";
+
+/**
+ * Asyncronous javascript file fetch only when this component is used. Useful for those packages that
+ * dont need to be present on the entire app, but only on certain pages. for those that need to be used for
+ * entire site, bundle with webpack into vendor.
+ */
+//let LoadersAndAnimations = () => import(/* webpackChunkName: "loaders" */"./components/LoadersAndAnimations");
+import LoadersAndAnimations from "./components/LoadersAndAnimations";
+
 export default {
 
 	mode: 'history', //Use HTML5 History api (as oppsed to hashes in the url)
