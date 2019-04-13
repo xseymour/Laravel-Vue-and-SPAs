@@ -49,6 +49,34 @@
  * @import "components/forms";
  */
 
+.button {
+  @apply .border .border-grey-light .px-8 .py-2 .rounded-full .text-black .font-bold .text-xs;
+  transition: all 0.3s;
+
+  &:hover {
+    @apply .bg-blue-light .border-blue-light .text-white;
+  }
+}
+
+a {
+  text-decoration: none;
+  @apply .font-light;
+}
+
+p {
+  @apply .font-light;
+}
+
+.section {
+  @apply .px-8;
+}
+
+a {
+  color: #222222;
+
+  text-decoration: none;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -74,8 +102,4 @@
  * @import "utilities/skew-transforms";
  */
 
-a {
-  color: #222222;
 
-  text-decoration: none;
-}

@@ -49,11 +49,11 @@ let colors = {
   'black': '#222222',
   'grey-darkest': '#4a4a4a', //override
   'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
+  'grey-dark': '#78909C', //override
   'grey': '#b8c2cc',
   'grey-light': '#dedede', //override
   'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'grey-lightest': '#f9f9f9', //override
   'white': '#ffffff',
 
   'red-darkest': '#3b0d0c',
@@ -100,7 +100,7 @@ let colors = {
   'blue-darker': '#1c3d5a',
   'blue-dark': '#2779bd',
   'blue': '#1747b0', //override
-  'blue-light': '#6cb2eb',
+  'blue-light': '#328af1', //override
   'blue-lighter': '#bcdefa',
   'blue-lightest': '#eff8ff',
 
@@ -253,6 +253,7 @@ module.exports = {
   */
 
   textSizes: {
+    '2xs': '.625rem', // 10px override
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
     'base': '1rem',     // 16px
@@ -310,6 +311,7 @@ module.exports = {
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
+    relaxed: 2, //override
     'loose': '40px',
 
   },
@@ -494,6 +496,7 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '18': '4.5rem', //override
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',
@@ -543,6 +546,7 @@ module.exports = {
     '10': '2.5rem',
     '12': '3rem',
     '16': '4rem',
+    '18': '4.5rem', //override
     '24': '6rem',
     '32': '8rem',
     '48': '12rem',

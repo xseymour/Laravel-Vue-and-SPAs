@@ -6,7 +6,7 @@ mix.disableSuccessNotifications();
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .extract(['axios', 'jquery', 'lodash', 'popper.js', 'vue', 'bulma', 'vue-router'])
+    .extract(['axios', 'jquery', 'lodash', 'popper.js', 'vue', 'bulma', 'vue-router', 'lottie-web'])
     .tailwind()
    ;
 

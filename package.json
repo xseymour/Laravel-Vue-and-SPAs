@@ -28,6 +28,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "lottie-web": "^5.5.1",
         "vue-router": "^3.0.2"
     }
 }
