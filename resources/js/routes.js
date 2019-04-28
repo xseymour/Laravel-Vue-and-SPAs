@@ -6,6 +6,7 @@ import Typography from './components/Typography';
 import Mascot from './components/Mascot';
 import Illustrations from "./components/Illustrations";
 import Wallpapers from "./components/Wallpapers";
+import SiteStats from "./components/SiteStats";
 
 /**
  * Asyncronous javascript file fetch only when this component is used. Useful for those packages that
@@ -65,5 +66,10 @@ export default {
 			component: Wallpapers
 		},
 
+		//Stats ----------------------------------------------------------------
+		{
+			path: '/site-stats',
+			component: SiteStats
+		},
 	]
 }
